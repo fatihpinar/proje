@@ -1,0 +1,95 @@
+section { padding: 50px; text-align: center; font-weight: bold; font-size: 20px; }
+.hero { background: #FFD700; } /* Sarı */
+.hero { position: relative; width: 100%; height: 500px; background: url('images/hero-banner.jpg') no-repeat center center/cover; display: flex; align-items: center; justify-content: flex-start; padding-left: 50px; }
+.hero-content { background: rgba(255, 255, 255, 0.85); padding: 30px; border-radius: 10px; max-width: 400px; }
+.hero h1 { font-size: 24px; color: #181818; }
+.hero p { font-size: 16px; color: #595566; }
+.hero-buttons { display: flex; gap: 10px; margin-top: 20px; }
+.hero-buttons .btn-dark { background: #181818; color: white; padding: 10px 20px; border-radius: 20px; }
+.hero-buttons .btn-light { background: white; border: 1px solid #181818; padding: 10px 20px; border-radius: 20px; }
+.clients { background: #FF6347; } /* Kırmızı */
+.about { background: #4682B4; } /* Mavi */
+.services { background: #32CD32; } /* Yeşil */
+.steps { background: #8A2BE2; } /* Mor */
+.testimonials { background: #FF69B4; } /* Pembe */
+.stats { background: #1E90FF; } /* Açık Mavi */
+.cta { background: #FF4500; } /* Turuncu */
+.blog { background: #DAA520; } /* Altın Sarısı */
+.contact { background: #2E8B57; } /* Deniz Yeşili */
+footer { background: #333; color: white; padding: 30px; }
+.header { background: #222; padding: 20px; display: flex; align-items: center; justify-content: space-between; }
+.logo { background: #FFD700; padding: 10px; } /* Sarı */
+.contact-button { background: #32CD32; padding: 10px; border-radius: 20px; } /* Yeşil */
+
+/* HEADER */
+.header {
+    background: #222;
+    padding: 15px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO */
+.logo img {
+    height: 40px; /* Logonun yüksekliği */
+}
+
+/* NAVIGATION MENU */
+.nav-menu {
+    display: flex;
+}
+
+/* TURUNCU ARKA PLANI KALDIRIYORUZ */
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 25px; /* Menü öğeleri arasındaki boşluk */
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu ul li {
+    display: inline;
+    position: relative;
+}
+
+/* MENÜ ÖĞELERİ (Noktalar Dahil) */
+.nav-menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* NOKTALAR */
+.nav-menu ul li a::before {
+    content: "•";
+    color: #4CAF50; /* Yeşil */
+    font-size: 12px;
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1; /* Her zaman görünür olacak */
+}
+
+/* TELEFON BUTONU */
+.contact-button {
+    background: white;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+}
+
+.phone-icon {
+    background: #FFD700;
+    padding: 5px;
+    border-radius: 50%;
+}
