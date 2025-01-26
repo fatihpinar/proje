@@ -3,59 +3,424 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Consulting Agency</title>
-    <link rel="stylesheet" href="style.css"> <!-- CSS dosyası -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Lato:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- Google Icons -->
-
+    <title>AskExperts</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
-    <header class="header">
-        <div class="logo">
-            <img src="images/logo.jpg" alt="Company Logo">
+
+    <!-- Topbar Section -->
+    <div class="topbar">
+        <div class="time">
+            <i class="fas fa-clock"></i>
+            <span>Monday - Friday 8AM - 9PM</span>
         </div>
-        <nav class="nav-menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Pages</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Work</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="contact-button">
-            <span class="phone-icon">📞</span> 
-            <span>(888) 452 1505</span>
+
+        <div class="location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>725 Park Ave, New York</span>
         </div>
-    </header>    
+
+        <div class="follow">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+
+        <!-- Header Section -->
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-comment-dots"></i>
+                <span>AskExperts</span>
+            </div>
     
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Your small business growth advisors</h1>
-            <p>Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</p>
-            <div class="hero-buttons">
-                <button class="btn-dark">Our Services</button>
-                <button class="btn-light">Book a Meeting</button>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#" class="active"><span class="dot"></span> Home</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Pages</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+    
+            <div class="contact-button">
+                <i class="fas fa-phone-alt"></i>
+                <span>+ (888) 452 1505</span>
+            </div>
+        </header>    
+
+        <section class="banner">
+            <div class="banner-content">
+                <div class="banner-text">
+                    <h1>Your small business growth advisors</h1>
+                    <p>Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</p>
+                    <div class="banner-buttons">
+                        <button class="btn-dark">Our Services</button>
+                        <button class="btn-light"><i class="fas fa-calendar-alt"></i> Book a Meeting</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="clients">
+            <div class="clients-container">
+                <img src="images/customer1.png" alt="Studio Green">
+                <img src="images/customer2.png" alt="Norto">
+                <img src="images/customer3.png" alt="Points One">
+                <img src="images/customer4.png" alt="Out of the Sandbox">
+                <img src="images/customer5.png" alt="Brand">
+                <img src="images/customer6.png" alt="Fortune">
+            </div>
+        </section>
+  
+        <section class="about-us">
+            <div class="about-container">
+                <!-- Sol taraf (Metinler) -->
+                <div class="about-text">
+                    <div class="about-label">ABOUT US</div>
+                    <h2>About our Consulting Agency Team</h2>
+                    <p class="about-subtitle">We create experiences and build products that make business grow</p>
+                    <p class="about-description">
+                        Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.
+                    </p>
+                    <hr class="about-divider">
+                    <div class="about-stats">
+                        <div class="stat-box">
+                            <span class="star-icon">⭐</span>
+                            <span class="stat-number">400+</span>
+                            <p>Business Services</p>
+                        </div>
+                        <div class="stat-box">
+                            <span class="check-icon">✅</span>
+                            <span class="stat-number">100+</span>
+                            <p>Happy Customer</p>
+                        </div>   
+                    </div>
+                </div>
+        
+                <!-- Sağ taraf (Görseller) -->
+                <div class="about-images">
+                    <div class="pattern-overlay"></div> <!-- Nokta doku arka planda -->
+                    <div class="about-photo">
+                        <img src="images/Consulting-team.jpg" alt="Consulting Team">
+                    </div>
+                    <div class="market-experience">
+                        <div class="circle-icon">50+</div>
+                        <p>Market Experiences</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="services">
+            <div class="services-container">
+                <div class="services-header">
+                    <span class="services-label">SERVICES</span>
+                    <h2>Get Control Over Your Business I take your finance to next level</h2>
+                </div>
+        
+                <div class="services-grid">
+                    <!-- Kart 1 -->
+                    <div class="service-card">
+                        <i class="fas fa-chart-pie"></i>
+                        <h3>Audit & Evaluation</h3>
+                        <p>Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</p>
+                    </div>
+        
+                    <!-- Kart 2 (Özel Siyah Kart) -->
+                    <div class="service-card dark-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h3>Financial Projections</h3>
+                        <p>Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</p>
+                    </div>
+        
+                    <!-- Kart 3 -->
+                    <div class="service-card">
+                        <i class="fas fa-hand-holding-usd"></i>
+                        <h3>Funds and investments</h3>
+                        <p>Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</p>
+                    </div>
+        
+                    <!-- Kart 4 -->
+                    <div class="service-card">
+                        <i class="fas fa-coins"></i>
+                        <h3>Finance & Restructuring</h3>
+                        <p>Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</p>
+                    </div>
+        
+                    <!-- Kart 5 -->
+                    <div class="service-card">
+                        <i class="fas fa-file-invoice-dollar"></i>
+                        <h3>Taxes & Efficiency</h3>
+                        <p>Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</p>
+                    </div>
+        
+                    <!-- Kart 6 -->
+                    <div class="service-card">
+                        <i class="fas fa-university"></i>
+                        <h3>Investment banking</h3>
+                        <p>Get help from Alex Moore, a professional business coach with advanced experience on growth and business scaling.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="process-experience">
+            <div class="container">
+                
+                <!-- Sol Taraf: Process -->
+                <div class="process">
+                    <span class="process-label">PROCESS</span>
+                    <h2>There have some easy steps to join with us!</h2>
+                    <p>Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.</p>
+        
+                    <div class="process-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h3>Setup Account</h3>
+                                <p>We understand the importance of approaching each work integrally.</p>
+                            </div>
+                        </div>
+        
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h3>Consult with us</h3>
+                                <p>Increase social reach and productivity with our App Directory.</p>
+                            </div>
+                        </div>
+        
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h3>Payment & Boost</h3>
+                                <p>We encourage every team member to be a whole person.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Sağ Taraf: Experience -->
+                <div class="experience">
+                    <span class="experience-label">GROWING WITH OUR CLIENTS</span>
+                    <h2>30 Years of Experience</h2>
+                    <p>Capitalize on low hanging fruit to identify a ballpark value added activity beta test.</p>
+        
+                    <div class="experience-grid">
+                        <div class="experience-card">
+                            <i class="fas fa-check-circle"></i>
+                            <h3>Consistency</h3>
+                            <p>Podcasting operational change management workflow.</p>
+                        </div>
+        
+                        <div class="experience-card dark-card">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>Improvement</h3>
+                            <p>Podcasting operational change management workflow.</p>
+                        </div>
+        
+                        <div class="experience-card">
+                            <i class="fas fa-sitemap"></i>
+                            <h3>Branching</h3>
+                            <p>Podcasting operational change management workflow.</p>
+                        </div>
+        
+                        <div class="experience-card dark-card">
+                            <i class="fas fa-chart-bar"></i>
+                            <h3>Company Growth</h3>
+                            <p>Podcasting operational change management workflow.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <section class="image-gallery">
+        <!-- Pattern Overlay -->
+        <div class="pattern-overlay"></div>
+
+        <!-- Gallery Header -->
+        <div class="image-gallery-header">
+            <span class="process-label">PROCESS</span>
+            <h2>Our client, global analytical techno <br> company, wanted to build market.</h2>
+            <button class="more-gallery">More Gallery</button>
+        </div>
+
+        <!-- Gallery Grid -->
+        <div class="gallery-grid">
+            <!-- Gallery Item 1 -->
+            <div class="gallery-item">
+                <img src="images/gallery-image1.png" alt="Gallery Image 1">
+                <div class="overlay">
+                    <h3>Taxes & Efficiency</h3>
+                    <p>Business</p>
+                </div>
+                <span class="plus-icon">+</span>
+            </div>
+
+            <!-- Gallery Item 2 -->
+            <div class="gallery-item">
+                <img src="images/gallery-image2.png" alt="Gallery Image 2">
+            </div>
+
+            <!-- Gallery Item 3 -->
+            <div class="gallery-item">
+                <img src="images/gallery-image3.png" alt="Gallery Image 3">
+            </div>
+
+            <!-- Gallery Item 4 -->
+            <div class="gallery-item">
+                <img src="images/gallery-image4.png" alt="Gallery Image 4">
+            </div>
+
+            <!-- Gallery Item 5 -->
+            <div class="gallery-item">
+                <img src="images/gallery-image5.png" alt="Gallery Image 5">
+            </div>
+
+            <!-- Gallery Item 6 -->
+            <div class="gallery-item">
+                <img src="images/gallery-image6.png" alt="Gallery Image 6">
             </div>
         </div>
-    </section>
+        </section>
+        <section class="counter">
+            <div class="counter-container">
+                <div class="counter-item">
+                    <h2>1128+</h2>
+                    <p>Successful Work</p>
+                </div>
+                <div class="counter-item">
+                    <h2>908+</h2>
+                    <p>Team Member</p>
+                </div>
+                <div class="counter-item">
+                    <h2>258+</h2>
+                    <p>Happy Customers</p>
+                </div>
+                <div class="counter-item">
+                    <h2>564+</h2>
+                    <p>Creative Idea</p>
+                </div>
+            </div>
+        </section>
 
+        <section class="client-feedback">
+            <div class="feedback-container">
+                <span class="feedback-label">CLIENT FEEDBACK</span>
+                <p class="feedback-text">
+                    “Lorem ipsum dolor sit amet, consectetur <strong>adipiscing elit, sed do eiusmod</strong> tempor incididunt ut labore et dolore”
+                </p>
+                <div class="feedback-user">
+                    <button class="prev-btn"><i class="fas fa-arrow-left"></i> Prev</button>
+                    <div class="user-photo">
+                        <img src="images/user1.jpg" alt="User Photo">
+                    </div>
+                    <button class="next-btn">Next <i class="fas fa-arrow-right"></i></button>
+                </div>
+                <p class="user-role">Web Designer</p>
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <div class="footer-container">
+                <!-- Sol Kısım: Logo ve Sosyal Medya -->
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <i class="fas fa-comment-dots"></i>
+                        <span>AskExperts</span>
+                    </div>
+                    <div class="footer-socials">
+                        <a href="#">Fb.</a> /
+                        <a href="#">Ig.</a> /
+                        <a href="#">Tw.</a> /
+                        <a href="#">Be.</a>
+                    </div>
+                </div>
+        
+                <!-- Orta Kısım: Ürün ve Şirket Linkleri -->
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Product</h4>
+                        <ul>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Single Service</a></li>
+                            <li><a href="#">Get Quote</a></li>
+                            <li><a href="#">Prices</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">News</a></li>
+                            <li><a href="#">Contacts</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Our team</a></li>
+                            <li><a href="#">Our approach</a></li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <!-- Sağ Kısım: Adres ve Buton -->
+                <div class="footer-right">
+                    <h4>Address</h4>
+                    <p>1700 W Blancke St, Kiyew port, south USA, America</p>
+                    <a href="#" class="btn-appointment">Book an Appointment</a>
+                </div>
+            </div>
+        
+            <!-- Alt Satır: Telif Hakkı -->
+            <div class="footer-bottom">
+                <p>©2022 Consultalk. All rights reserved | <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></p>
+            </div>
+        </footer>
+        
+        
+<script>
+    const feedbacks = [
+    {
+        text: "“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore”",
+        image: "images/user1.jpg",
+        role: "Web Designer"
+    },
+    {
+        text: "“Praesent commodo cursus magna, vel scelerisque nisl consectetur et.”",
+        image: "images/user2.jpg",
+        role: "Marketing Expert"
+    },
+    {
+        text: "“Vestibulum id ligula porta felis euismod semper.”",
+        image: "images/user3.jpg",
+        role: "Software Engineer"
+    }
+];
 
-    <section class="clients">CLIENTS (MÜŞTERİ LOGOLARI)</section>
-    <section class="about">ABOUT (HAKKIMIZDA)</section>
-    <section class="services">SERVICES (HİZMETLER)</section>
-    <section class="steps">STEPS (İŞLEYİŞ VE TECRÜBE)</section>
-    <section class="testimonials">TESTIMONIALS (MÜŞTERİ YORUMLARI)</section>
-    <section class="stats">STATS (İSTATİSTİKLER)</section>
-    <section class="cta">CTA (ÇAĞRI ALANI)</section>
-    <section class="blog">BLOG (BLOG YAZILARI)</section>
-    <section class="contact">CONTACT (İLETİŞİM)</section>
-    
-    <footer>FOOTER (ALT BİLGİ)</footer>
-    
-    <script src="assets/js/script.js"></script> <!-- JavaScript dosyası -->
+let currentFeedback = 0;
+
+document.querySelector(".prev-btn").addEventListener("click", () => {
+    currentFeedback = (currentFeedback - 1 + feedbacks.length) % feedbacks.length;
+    updateFeedback();
+});
+
+document.querySelector(".next-btn").addEventListener("click", () => {
+    currentFeedback = (currentFeedback + 1) % feedbacks.length;
+    updateFeedback();
+});
+
+function updateFeedback() {
+    document.querySelector(".feedback-text").innerHTML = feedbacks[currentFeedback].text;
+    document.querySelector(".user-photo img").src = feedbacks[currentFeedback].image;
+    document.querySelector(".user-role").innerText = feedbacks[currentFeedback].role;
+}
+
+</script>
 </body>
 </html>
