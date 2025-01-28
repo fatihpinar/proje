@@ -37,15 +37,19 @@
                 <i class="fas fa-comment-dots"></i>
                 <span>AskExperts</span>
             </div>
-    
-            <nav class="nav-menu">
+
+            <!-- Mobil Menü İkonu -->
+            <div id="menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <nav class="nav-menu">  
                 <ul>
-                    <li><a href="#" class="active"><span class="dot"></span> Home</a></li>
+                    <li><a href="index.html" class="active"><span class="dot"></span> Home</a></li>
                     <li><a href="#">Pages</a></li>
-                    <li><a href="#">Services</a></li>
+                    <li><a href="services.html">Services</a></li>
                     <li><a href="#">Work</a></li>
-                    <li><a href="#">Pages</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
     
@@ -269,6 +273,7 @@
             <!-- Gallery Item 1 -->
             <div class="gallery-item">
                 <img src="images/gallery-image1.png" alt="Gallery Image 1">
+                
                 <div class="overlay">
                     <h3>Taxes & Efficiency</h3>
                     <p>Business</p>
@@ -343,40 +348,38 @@
             </div>
         </section>
 
-        <section class="consult-preview">
-            <!-- Sol Taraf: Başlık, Açıklama, Buton -->
-            <div class="content-box">
-                <span class="book-now">BOOK NOW</span>
-                <h2><span>Better Consult,</span> <strong>Better Results</strong></h2>
-                <p>Our software development agency has a growth up to 30% per each year. If you are result-oriented, not afraid to take initiative – drop us a note and join our team!</p>
-                <button class="contact-btn">
-                    <i class="fas fa-phone-alt"></i> +800 1234 654
-                </button>
-            </div>
+        <section class="cta-section">
+            <div class="container">
+                <!-- Sol Taraf -->
+                <div class="left-content">
+                    <span class="book-now">BOOK NOW</span>
+                    <h1>Better Consult, <span>Better Results</span></h1>
+                    <p>Our software development agency has a growth up to 30% per each year. If you are result-oriented, not afraid to take initiative – drop us a note and join our team!</p>
+                    <button class="cta-button">
+                        <i class="fas fa-phone-alt"></i> +800 1234 654
+                    </button>
+                </div>
         
-            <!-- Sağ Taraf: Görseller -->
-            <div class="image-container">
-                <!-- Noktalı Pattern -->
-                <div class="pattern-overlay"></div>
-        
-                <!-- Yeşil Şekil -->
-                <div class="green-shape"></div>
-        
-                <!-- Sayfa Görseli -->
-                <img src="images/Photo (3).png" alt="Background Page" class="background-image">
-        
-                <!-- Sarı Kaplama -->
-                <div class="overlay-yellow"></div>
-        
-                <!-- Büyük Ana Resim -->
-                <div class="main-image">
-                    <img src="images/Photo (2).png" alt="Main Website">
+                <!-- Sağ Taraf -->
+                <div class="right-content">
+                    <div class="pattern-background">
+                        <img src="images/Pattern.png" alt="Pattern">
+                    </div>
+                    <div class="green-box"></div>
+                    <div class="main-image">
+                        <img src="images/Photo (2).png" alt="Main Photo">
+                    </div>
+                    <div class="masked-image">
+                        <img src="images/Photo (3).png" alt="Background Photo">
+                        <div class="yellow-mask"></div>
+                    </div>
                 </div>
             </div>
         </section>
+        
 
         <section class="blog-section">
-            <div class="container">
+            <div class="blog-container">
                 <div class="blog-header">
                     <span class="blog-label">BLOG</span>
                     <h2>Take a look at our latest articles & resources</h2>
@@ -406,6 +409,7 @@
                 </div>
             </div>
         </section>
+        
 
         <section class="contact-section">
             <div class="contact-container">
@@ -513,7 +517,7 @@
                 <div class="footer-right">
                     <h4>Address</h4>
                     <p>1700 W Blancke St, Kiyew port, south USA, America</p>
-                    <a href="#" class="btn-appointment">Book an Appointment</a>
+                    <a href="contact.html" class="btn-appointment">Book an Appointment</a>
                 </div>
             </div>
         
@@ -561,6 +565,16 @@ function updateCard() {
     document.querySelector(".user-photo img").src = cards[currentCard].image;
     document.querySelector(".user-role").innerText = cards[currentCard].role;
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    let menuIcon = document.querySelector("#menu-icon");
+    let navMenu = document.querySelector(".nav-menu");
+
+    menuIcon.addEventListener("click", function () {
+        navMenu.classList.toggle("open");
+    });
+});
+
 
 </script>
 </body>
